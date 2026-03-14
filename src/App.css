@@ -36,3 +36,152 @@
     transform: rotate(360deg);
   }
 }
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.dashboard__hr {
+  display: none;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar__link:hover {
+  background-color: #555;
+}
+
+.dashboard__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__navbar {
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard__title {
+  margin: 0;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Table Styles */
+.main__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main__table-head {
+  background-color: #f8f9fa;
+}
+
+.main__table-hd {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: bold;
+}
+
+.main__table-d {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.main__table-r:hover {
+  background-color: #f8f9fa;
+}
+
+.main__table-svgs {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main__table-d button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.main__table-d button:hover {
+  opacity: 0.8;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal__exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.modal__boxes {
+  margin-bottom: 15px;
+}
+
+.modal__title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal__texts {
+  margin: 0;
+}
+
+.modal__img {
+  max-width: 100%;
+  height: auto;
+}
